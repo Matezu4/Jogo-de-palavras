@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jogo de Palavra Embaralhada</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/palavras.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Palavra Embaralhada</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Dica: <span></span></p>
+                <p class="time">Tempo restante: <span><b>30</b>s</span></p>
+                <p class="classe">Tema: <span></span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Digite uma palavra válida">
+            <div class="buttons">
+                <button class="refresh-word">Atualizar Palavra</button>
+                <button class="check-word">Verificar Palavra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalMessage" class="modal-message"></p>
+            <button id="modalBtn" class="modal-btn">OK</button>
+        </div>
+    </div>
+  </body>
+</html>
